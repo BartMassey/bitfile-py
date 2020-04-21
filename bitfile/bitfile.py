@@ -65,7 +65,7 @@ def int_to_bytearray(value, length):
     return ba
 
 
-class BitFile:
+class BitFile(object):
 
     """Methods used to read and write files an N bits at a time.
 

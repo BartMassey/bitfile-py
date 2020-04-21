@@ -17,7 +17,7 @@ setup.py        - distutils setup file.
 
 INSTALLING
 ----------
-This package uses distutils.  The package may be installed with the following
+This package uses setuptools.  The package may be installed with the following
 command:
 python setup.py install
 
@@ -37,6 +37,7 @@ HISTORY
 01/14/10 - Initial release
 03/04/10 - Add support for 'r+' (read/write) mode
 07/30/17 - Add support for python 3.x
+04/21/20 - Update support for python 3.x
 
 TODO
 ----

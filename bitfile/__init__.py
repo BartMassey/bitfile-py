@@ -17,8 +17,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-from bitfile import BitFile
+import sys
+
+if sys.version_info < (3, 2):
+    from bitfile import BitFile
+else:
+    from bitfile.bitfile import BitFile
 
 __author__ = "Michael Dipperstein <mdipperstein@gmail.com>"
 __license__ = "GPL"
-__version__ = "0.2"
+__version__ = "0.3.1"

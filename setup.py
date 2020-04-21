@@ -1,8 +1,7 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 with open('README') as file:
     __desc__ = file.read()
-
 
 __classifiers__ = [
     'Development Status :: 4 - Beta',
@@ -21,13 +20,13 @@ module_description = \
 
 setup(
     name='bitfile',
-    version='0.3',
+    version='0.3.1',
     description=module_description,
     author='Michael Dipperstein',
     author_email='mdipperstein@gmail.com',
     license='GPL',
     url='https://michaeldipperstein.github.io/bitfile.html',
-    packages=['bitfile', ],
+    packages=find_packages(),
     package_data={'bitfile': ['COPYING', 'README']},
     platforms='All platforms',
     long_description=__desc__,
